@@ -1,0 +1,290 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #ff5722;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5vw;
+    font-family: futura;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    color: #ffcc00;
+}
+h4{
+    font-size: 5vw;
+    font-family: futura;
+    text-transform: uppercase;
+    color: #ffcc00;
+}
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Video Section */
+#video-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#video-section video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About & Skills Section */
+.about-skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* About Me */
+.about-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about-image img {
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+/* Skills */
+.skills-container {
+    flex: 1;
+    background-color: #444;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-container ul li {
+    background: #555;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-card {
+    background: #444;
+    padding: 15px;
+    margin: 15px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+#contact {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+/* Terminal Styles */
+#terminal-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+.terminal {
+    background: black;
+    color: limegreen;
+    font-family: "Courier New", monospace;
+    width: 60%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3);
+    overflow: hidden;
+}
+.terminal-header {
+    background: #333;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.red { background: #ff5f57; }
+.yellow { background: #ffbd2e; }
+.green { background: #28c941; }
+
+.terminal-title {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.terminal-body {
+    padding: 15px;
+    font-size: 16px;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    height: calc(100% - 40px);
+}
+
+/* Authentication Container */
+#auth-container {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    place-items: center; /* Centers horizontally and vertically */
+    padding: 25px;
+}
+
+/* Auth Box Styles login and signup */
+.auth-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.auth-box h2 {
+    margin-bottom: 15px;
+}
+
+.auth-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.auth-box input::placeholder {
+    color: #ddd;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 10px;
+    background: #ff9800;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-box button:hover {
+    background: #e68900;
+}
+
+.auth-box p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.auth-box a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure visibility when terminal is running */
+#auth-container.active {
+    display: flex;
+}
+
+#main-content {
+    display: none;
+}
+
